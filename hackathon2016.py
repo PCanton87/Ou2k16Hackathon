@@ -7,36 +7,26 @@
 #Difficult to get python and command prompt line to work together, installing packages, etc
 #So, here we are in Fedora
 
-#Goals:
-#
+#Goals/some things we wanted to learn to apply to our other works:
 
-#So far, rather than getting data off a webpage we found a package that could play a video from an html link
-#So, a little different than what I need to learn for yahoo finace.   
+#Rather than getting data off a webpage as we hoped to learn, we found a package that could 
+#play a video from an html link.
 
-#Wanted to learn how to do an interactive plot - like you have in iraf
+#Wanted to learn how to do an interactive plot - like you have in iraf.  An interactive gui were one
+#could select parameter space in trebuchets draw and angle of fire was implimented.
 
-#Call and run an old (IDL) script, possibly via the command line.
-#I would like to wrap my python codes and kurtis' IDL calc_mass code into an IFMR pipeline
-#Need to call kurtis' code somehow, else id have to rewrite it all in python
-
+#Wanted to learn tocall and run an old (IDL) script, possibly via the command line from within python.
+#os.system might be useful for this, but wasn't implimented for this cause.
 
 
 
-
-
+#Some more background:
 #Tim and I wanted to do a game, sieging NH (ie black holes you fall into behind doors, etc).  Quickly found it
 #would be complicated to write a lot in a weekend,
 #and around our goals of things to learn settled on sieging gittenger hall with a trebuchet which is currently
 #being demonlished anyhow. 
 
-#Interactive gui could select parameter space in trebuchets draw and angle of fire.  Theres some physics for ya
-
-#Use monty python clips for triumph or defeat if you hit or miss the building
-
-
-
-#Challagne is to get an interactive plot.  Could query user for input angle and initial speed f we cant get this
-#to work.
+#Fun idea: Use monty python clips for triumph or defeat if you hit or miss the building
 
 import math as mth
 import os
@@ -117,7 +107,7 @@ pygame.init()
 while tryagain == 1:
 
     #install pygame to be able to do gui stuff: >> sudo yum install pygame
-    #never found time to get an input gui going...
+    #In a later version we got an input gui going... not here
     screen = pygame.display.set_mode((1500,720))
     pygame.display.set_caption('Down With Gittinger Hall!!!')
     inangle = ask(screen, "Enter the launch angle between 0 and 90 degrees ")
@@ -140,7 +130,8 @@ while tryagain == 1:
 
 
     #Position of target (building) is exactly 10m high,
-    #with a down range distance of 50?
+    #with a down range distance of 50
+    #N.B. yt is the middle point of the buildings height
     xt = 50
     yt = 5
 
@@ -250,14 +241,3 @@ pygame.display.flip()
 time.sleep(5)
 pygame.display.quit()
 #print 'Huzzah, hackathon 2k16 was fun!'
-    
-
-
-
-
-    # Download the files from html first, download: sudo yum install youtube-dl
-    #then get the movie clips downloaded:
-    #right click the you tube video itself as it plays, hit 'copy video url'
-    #Then in a new terminal command line to dl say the tebuchet clip:
-    #>>youtube-dl https://youtu.be/pR26RMI9T8c
-
