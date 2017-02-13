@@ -1,4 +1,4 @@
-#Ou physics hackathon 2k16
+#Ou physics hackathon 2k16.  Authors: Paul Canton, Tim Miller
 
 #Theme: An adventure.  Possibly a game or a story
 
