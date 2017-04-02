@@ -1,9 +1,22 @@
 README inagural 2016 Ou physics & astronomy dept hackathon project
 Paul Canton & Tim Miller
 
-For this hackathon, we were challenged with designing an adventure. At the time of assignment, the building next to the Physics & Astronomy department was being torn down to make room for a second Physics & Astronomy department building. A natural adventure which would include some physics would be to get in on demonishing this building... in a fun way!  We implimented some well known projectile motion equations of motion to simulate launching a trebuchet striking the building, assumed to be a few meters tall.  THe user input initial speed and launch angle of the projectile.  When it, an over the top nuclear explosion video plays over a photo of the building to be demolished. If missed, a series of monty python french taunter clips are played, one for each time you miss.
+For this hackathon, we were challenged with designing an adventure. 
+At the time of assignment, the building next to the Physics & Astronomy 
+department was being torn down to make room for a second Physics & 
+Astronomy department building. A natural adventure which would include 
+some physics would be to get in on demonishing this building... in a fun 
+way!  We implimented some well known projectile motion equations of 
+motion to simulate launching a trebuchet striking the building, assumed 
+to be a few meters tall.  THe user input initial speed and launch angle 
+of the projectile.  When it, an over the top nuclear explosion video 
+plays over a photo of the building to be demolished. If missed, a series 
+of monty python french taunter clips are played, one for each time you 
+miss.
 
-One will need vlc, a video player than can run .webm video files.
+One will need:
+-vlc, a video player than can run .webm video files.
+-pygame, a python package not typically preinstalled with python
 
 Enjoy
 -Paul
